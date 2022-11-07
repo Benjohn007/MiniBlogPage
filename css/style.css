@@ -1,0 +1,450 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: unset;
+}
+
+body{
+	/*background: blue;*/
+	color: #fff;
+}
+.checkbtn{
+	width: 20px;
+	float: right;
+	cursor: pointer;
+	margin-right: 30px ;
+	line-height: 80px;
+	display: none;
+}
+#check{
+	display: none;
+}
+
+.container{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.bgimage{
+	width: 100%;
+	height: 100%;
+	background-image: linear-gradient(rgba(26, 26, 25, 0.8), rgba(26, 26, 25, 0.8)), url("../image/rainbow.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+
+}
+.content{
+	position: absolute;
+	top:  60%;
+	left: 50%;
+	width: 100%;
+	max-width: 900px;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	/*padding: 10px;*/
+
+}
+.content h1{
+	text-transform: uppercase;
+	/*border: 3px solid darkgreen;*/
+	border-radius: 7px;
+	letter-spacing: 6px;
+	font-size: 30px;
+	width: 100%;
+	padding-bottom: 10px;
+
+}
+.content p{
+	line-height: 1.5em;
+}
+
+.content form{
+	display: flex;
+	/*align-items: center;*/
+	/*justify-content: center;*/
+	background: white;
+	margin-top: 5%;
+	border-radius: 35px;
+	padding: 10px;
+
+}
+.content form input{
+	flex: 1;
+	border: none;
+	outline: none;
+	padding: 0 20px;
+	font-size: 15px;
+}
+.content form:hover{
+	border-bottom: 4px solid darkgreen;
+}
+.btn{
+	background: darkgreen;
+	padding: 10px;
+	color: white;
+	cursor: pointer;
+	border: none;
+	border-radius: 16px;
+	text-transform: uppercase;
+	position: relative;
+}
+span{
+	width: 0;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	border-radius: 16px;
+	transition: 0.8s;
+	border: none;
+}
+.btn:hover span{
+	width: 100%;
+	border: 4px solid beige;
+}
+nav{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	/*position: sticky;*/
+}
+
+nav .logo{
+	/*width: 140px;*/
+	text-transform: uppercase;
+	padding: 0 20px;
+	font-size: 40px;
+	color: white;
+}
+nav ul{
+	padding: 28px;
+}
+
+nav ul li{
+	display: inline-block;
+	margin: 0 15px;
+}
+nav ul li a{
+	text-decoration: none;
+	color: white;
+	padding: 5px 0;
+	text-transform: uppercase;
+	position: relative;
+	transition: .5s;
+}
+nav ul li a:hover{
+	border: 3px solid darkgreen;
+	padding: 7px;
+	border-radius: 10px;
+}
+/*nav ul li a::after{
+	content: '';
+	background: darkgreen;
+	width: 0;
+	height: 3px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	transition: .5s;
+
+}
+nav ul li a:hover::after{
+	width: 100%;
+}*/
+.catergory-list{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 40px;
+}
+.catergory{
+	background: darkgreen;
+	opacity: 0.8;
+	width: 80px;
+	height: 80px;
+	margin: 0 10px;
+	border-radius: 7px;
+	transition: 0.5s;
+}
+.catergory p{
+	text-align: center;
+}
+.catergory:hover{
+	padding: 25px;
+	margin: 20px;
+}
+.service-item{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 100%;
+	width: 100%;
+	padding: 25px;
+	margin-top: 50px;
+
+}
+.service-box{
+	/*height: 80%;*/
+	/*display: flex;*/
+}
+.service{
+	background: lightgray;
+	color: black;
+	border-bottom: 2px solid darkgreen;
+	border-radius: 7px;
+	padding: 25px;
+	width: 30%;
+}
+.service h2{
+	text-transform: uppercase;
+}
+.service p{
+	background: whitesmoke;
+	color: black;
+	border-radius: 7px;
+	border-bottom: 2px solid darkgreen;
+	padding: 15px;
+}
+
+div .about{
+	display: flex;
+	margin: 60px;
+	padding: 30px;
+	color: darkgreen;
+	background: lightgray;
+	box-shadow: 0px 4px 2px grey;
+	border-radius: 5px;
+}
+
+
+.about div{
+	border-bottom: 3px solid darkgreen;
+	padding: 20px;
+	border-radius: 7px;
+
+
+}
+
+div .mission{
+	display: flex;
+	color: darkgreen;
+	margin: 60px;
+	border-radius: 5px;
+}
+.contactbox{
+	display: flex;
+	margin-top: 100px;
+	line-height: 20px;
+	margin: 60px;
+	border-radius: 5px;
+}
+.contact h2{
+	text-transform: uppercase;
+	text-align: center;
+}
+.btnx{
+	width: 5%;
+}
+.contact ul{
+	list-style: none;
+	padding: 25px;
+	line-height: 40px;
+}
+.contact form {
+	display: grid;
+	gap: 10px;
+	grid-template-columns: repeat(2, 1fr);
+	width: 100%;
+	padding: 15px;
+	margin-right: 55px;
+	/*border: 1px solid darkgreen;*/
+	background: whitesmoke;
+}
+
+.contact form .submit{
+	grid-column: span 2;
+	background: darkgreen;
+	outline: none;
+	color: white;
+
+
+}
+.contact input{
+	padding: 10px;
+	border-radius: 7px;
+	border: none;
+}
+section div{
+	padding: 20px;
+	color: black;
+	background: lightgray;
+
+}
+section .contact{
+	color: black;
+}
+
+footer{
+	color: black;
+	text-align: center;
+	margin-top: 50px;
+	text-transform: uppercase;
+}
+
+@media (min-width: 950px){
+
+}
+
+@media (max-width: 850px){
+	.container{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+
+.bgimage{
+	width: 100%;
+	height: 100%;
+	background-image: linear-gradient(rgba(26, 26, 25, 0.8), rgba(26, 26, 25, 0.8)), url("../image/rainbow.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.service-item{
+	display: block;
+	/*justify-content: space-between;*/
+	align-items: center;
+	height: 80%;
+	width: 100%;
+	padding: 25px;
+}
+.service{
+	background: #ccc;
+	border-bottom: 2px solid darkgreen;
+	border-radius: 7px;
+	padding: 25px;
+	width: 100%;
+	margin-bottom: 10px;
+}
+.service h2{
+	text-transform: uppercase;
+}
+.service p{
+	background: whitesmoke;
+	color: black;
+	border-radius: 7px;
+	border: 2px solid darkgreen;
+	padding: 15px;
+}
+.checkbtn{
+	display: block;
+	/*width: 50px;*/
+	margin-left: 20px;
+}
+
+#check:checked ~ ul{
+	left: 0;
+}
+
+nav{
+	position: relative;
+	
+}
+
+nav .logo{
+	/*width: 140px;*/
+	text-transform: uppercase;
+	padding: 0 65px;
+	font-size: 50px;
+
+}
+nav ul{
+	position: absolute;
+	width: 100%;
+	height: 100vh;
+	top: 80px;
+	background: black;
+	left: -100%;
+	transition: all .5s;
+	text-align: center;
+	z-index: 100;
+
+}
+
+nav ul li{
+	display: block;
+	margin: 30px 0;
+
+
+
+}
+nav ul li a{
+	font-size: 20px;
+	text-align: center;
+	z-index: 100;
+}
+nav ul li a:hover{
+	border: 3px solid darkgreen;
+	padding: 7px;
+	border-radius: 10px;
+}
+.content{
+	top: 50%;
+}
+.content h1{
+	font-size: 25px;
+	margin-bottom: 20px;
+}
+.content p{
+	width: 100%;
+
+	font-size: 15px;
+	/*padding-left: 50px;*/
+}
+.content form{
+	width: 80%;
+	margin-left: 50px;
+}
+
+div .about{
+	margin: 10px;
+	padding: 20px;
+	color: black;
+	/*background: seagreen;*/
+	display: block;
+}
+
+section div{
+	padding: 20px;
+	color: black;
+
+}
+section .contact{
+	color: black;
+}
+
+footer{
+	color: black;
+	text-align: center;
+}
+
+div .mission{
+	display: block;
+	color: darkgreen;
+	margin: 60px;
+	border-radius: 5px;
+}
+.contactbox{
+	display: block;
+	margin: 16px;
+}
+}
